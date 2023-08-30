@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <visual.camp.sample.view.GazePathView
+        android:id="@+id/gazePathView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOK SHELF"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/novel_spinner"
+        app:layout_constraintTop_toTopOf="@+id/gazePathView2" />
+
+    <Spinner
+        android:id="@+id/novel_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="518dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_select_novel"
+        app:layout_constraintEnd_toEndOf="@+id/gazePathView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/gazePathView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_select_novel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:text="Click"
+        app:layout_constraintBottom_toBottomOf="@+id/gazePathView2"
+        app:layout_constraintEnd_toEndOf="@+id/gazePathView2"
+        app:layout_constraintStart_toStartOf="@+id/gazePathView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
